@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useProfileStore from "../store/userProfileStore";
 import useShowToast from "./useShowToast";
 import { collection, getDoc, getDocs, query, setDoc, where } from 'firebase/firestore';
-import { auth, firestore, storage } from '../firebase/firebase';
+import { auth, firestore, storage } from '../Firebase/firebase';
 
 const useGetProfileNameByUsername = ({username}) => {
     const [isLoading, setIsLoading] = useState(true);
