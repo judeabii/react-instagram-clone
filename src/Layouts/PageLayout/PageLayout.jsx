@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import {Flex, Container, Box, Image, VStack} from "@chakra-ui/react"
-import Sidebar from "../../Components/Sidebar/sidebar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 import {useLocation} from 'react-router-dom'
 import useAuthStore from "../../store/authStore";
 import { auth, firestore, storage } from '../../Firebase/firebase';
