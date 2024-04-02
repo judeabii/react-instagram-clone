@@ -14,13 +14,13 @@ import usePostComment from "../../hooks/usePostComment";
 import { useEffect, useRef } from "react";
 
 const CommentsModal = ({ isOpen, onClose, post }) => {
-	const { handlePostComment, isCommenting } = usePostComment();
+	const { isCommenting, postComment } = usePostComment();
 	const commentRef = useRef(null);
 	const commentsContainerRef = useRef(null);
 	const handleSubmitComment = async (e) => {
 		// do not refresh the page, prevent it
 		e.preventDefault();
-		await handlePostComment(post.id, commentRef.current.value);
+		await postComment(post.id, commentRef.current.value);
 		commentRef.current.value = "";
 	};
 
