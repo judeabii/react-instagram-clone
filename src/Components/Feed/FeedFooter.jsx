@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {Input, VStack, Button, Flex, Box, Text, Image, Container, Spacer, InputGroup, InputRightElement, Skeleton, useDisclosure} from "@chakra-ui/react"
-import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
+import { Avatar, AvatarBadge, AvatarGroup, useBreakpointValue } from '@chakra-ui/react'
 import { CommentLogo, NotificationsLogo, UnlikeLogo } from '../../Assets/constants'
 import { color } from 'framer-motion'
 import usePostComment from '../../hooks/usePostComment'
@@ -8,6 +8,7 @@ import { useRef } from 'react'
 import useLikePost from '../../hooks/useLikePost'
 import PostModal from '../Comments/PostModal'
 import { Link } from 'react-router-dom'
+import CommentsModal from '../Comments/CommentsModal'
 
 const FeedFooter = ({post, isProfile, userProfile}) => {
 
@@ -16,6 +17,7 @@ const FeedFooter = ({post, isProfile, userProfile}) => {
     const [comment, setComment] = useState("")
     const {isLiking, isLiked, likes, handleLikePost} = useLikePost(post)
     const {isOpen, onOpen, onClose} = useDisclosure()
+    const modalSize = useBreakpointValue({ base: "CommentsModal", md: "PostModal" });
 
     const showComment = () => {
         console.log("clicked")
@@ -63,9 +65,14 @@ const FeedFooter = ({post, isProfile, userProfile}) => {
                 View all {post.comments.length} comments
             </Text>
             
-            {isOpen && (
-                <PostModal isOpen={isOpen} onClose={onClose} post={post}/>
+            {isOpen && modalSize && (
+                modalSize === "PostModal" ? (
+                <PostModal isOpen={isOpen} onClose={onClose} post={post} />
+                ) : (
+                <CommentsModal isOpen={isOpen} onClose={onClose} post={post} />
+                )
             )}
+
                 </>
             )}
             <InputGroup size={"xs"} marginBottom={6} display={commentBox || isProfile? "block":"none"}>

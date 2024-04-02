@@ -94,10 +94,13 @@ const ProfilePost = ({post}) => {
           </ModalHeader>
           <ModalBody bg={"#0E1514"} padding={0}>
                 <Flex padding={0} width={"full"} gap={2}>
-                    <Flex overflow={"hidden"}  minHeight={{base:null,md:"400px"}} maxHeight={"500px"} maxWidth={{base:"100%", md:"50%"}}>
+                    <Flex direction={"column"} overflow={"hidden"}  minHeight={{base:null,md:"400px"}} maxHeight={"500px"} maxWidth={{base:"100%", md:"50%"}}>
                         <Flex justifyContent={"center"} alignItems={"center"} height={"full"}>
                         <Image src={post.imageURL} height={"full"} objectFit={"contain"} objectPosition={"center"}/>
                         </Flex>
+                        <Box display={{base:"block", md:"none"}}>
+                            <FeedFooter post={post} isProfile={false} userProfile={userProfile}/>
+                        </Box>
                     </Flex>
                     <Flex direction={"column"} display={{base:"none", md:"flex"}} width={"full"} p={4}>
                         <VStack justifyContent={"flex-start"} alignItems={"flex-start"} overflowY={"auto"} marginBottom={"auto"} maxH={"350px"}>
