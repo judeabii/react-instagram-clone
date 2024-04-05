@@ -65,6 +65,8 @@ The Instagram Clone project covers all basic Instagram features, including:
 * **Feed**: Users have a personalized feed displaying posts from users they follow.
 * **Search Users**: Search for users using their username.
 
+Additional features such as notifications, the ability to change user profile pictures, and more will be added in due time, enhancing the overall user experience and functionality of the application. 
+
 ### Technologies Used
 * User
 * React
