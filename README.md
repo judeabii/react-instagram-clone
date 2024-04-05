@@ -55,6 +55,15 @@ const firebaseConfig = {
   measurementId: FIREBASE_MEASUREMENT_ID
 };
 ```
+### Features
+The Instagram Clone project covers all basic Instagram features, including:
+* **Posting pictures**: Users can upload and share images with captions.
+* **Following users**: Users can follow other users to see their posts in their feed.
+* **Liking posts**: Users can like posts to show appreciation.
+* **Commenting on posts**: Users can leave comments on posts to interact with other users.
+* **User profiles**: Each user has a profile page displaying their posts and follower/following count.
+* **Feed**: Users have a personalized feed displaying posts from users they follow.
+* **Search Users**: Search for users using their username.
 
 ### Technologies Used
 * User
