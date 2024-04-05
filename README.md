@@ -17,6 +17,22 @@ To start a development server and run the project in a development environment:
 ```
 npm run dev
 ```
+Install Chakra UI
+```
+npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
+```
+Next, wrap your entire application with ```Chakra Provider``` You can find more info on the Chakra UI docs page.
+```
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Router>
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
+    </Router>
+  </React.StrictMode>,
+)
+```
 
 ### Technologies Used
 * User
