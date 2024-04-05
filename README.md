@@ -7,12 +7,13 @@ Instagram Clone: A React-based web app with Chakra UI &amp; Firebase. Explore mo
 ### Prerequisites
 
 ### Technologies Used
-React
-Chakra UI
-Firebase
-    -Firebase Realtime Database
-    -Firebase Authentication
-    -Firebase Storage
+- User
+- React
+- Chakra UI
+- Firebase
+Firebase Realtime Database
+Firebase Authentication
+Firebase Storage
 
 
 
