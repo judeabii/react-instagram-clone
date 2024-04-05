@@ -5,6 +5,8 @@ Instagram Clone: A React-based web app with Chakra UI &amp; Firebase. Explore mo
 ### Please note that there is no integration with Instagram, and users cannot log in using their actual Instagram accounts.
 
 ### Prerequisites
+Create a Vite project:
+```npm create vite@latest```
 
 ### Technologies Used
 * User
