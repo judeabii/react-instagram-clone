@@ -6,6 +6,7 @@ Instagram Clone: A React-based web app with Chakra UI &amp; Firebase. Explore mo
 
 ### Prerequisites
 Create a Vite project:
+
 ```npm create vite@latest```
 
 ### Technologies Used
