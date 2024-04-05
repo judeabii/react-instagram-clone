@@ -9,9 +9,13 @@ Create a Vite project:
 ```
 npm create vite@latest
 ```
-Install all dependencies listed in the `package.json` file of your project.
+Install all dependencies listed in the `package.json` file of your project:
 ```
 npm install
+```
+To start a development server and run the project in a development environment:
+```
+npm run dev
 ```
 
 ### Technologies Used
