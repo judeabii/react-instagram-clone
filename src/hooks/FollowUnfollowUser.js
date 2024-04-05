@@ -30,7 +30,7 @@ const FollowUnfollowUser = (userId) => {
                 }
                 profileUserData = {
                     ...userProfile,
-                    followers: userLoggedIn.followers.filter(userID => userID !== userLoggedIn.uid)
+                    followers: userProfile.followers.filter(userID => userID !== userLoggedIn.uid)
                 }
             }
             else{
@@ -40,7 +40,7 @@ const FollowUnfollowUser = (userId) => {
                 }
                 profileUserData = {
                     ...userProfile,
-                    followers: [...userLoggedIn.followers, userLoggedIn.uid]
+                    followers: [...userProfile.followers, userLoggedIn.uid]
                 }
             }
 
