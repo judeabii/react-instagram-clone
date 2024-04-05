@@ -33,6 +33,28 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 ```
+### Install Firebase and its dependencies:
+```
+npm install firebase
+```
+#### Firebase Configuration
+* Set Up Firebase:
+    * Create a Firebase project at Firebase Console.
+    * Set up Firebase Authentication with the necessary providers (e.g., email/password).
+    * Set up Firebase Realtime Database or Firestore according to your preferences.
+    * Obtain your Firebase configuration details.
+* Configure Firebase:
+```
+const firebaseConfig = {
+  apiKey: API_KEY,
+  authDomain: AUTH_DOMAIN,
+  projectId: PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: MESSENGING_SENDER_ID,
+  appId: FIREBASE_APP_ID,
+  measurementId: FIREBASE_MEASUREMENT_ID
+};
+```
 
 ### Technologies Used
 * User
