@@ -65,5 +65,8 @@ const firebaseConfig = {
     * Firebase Authentication
     * Firebase Storage
 
+### Deployment 
+The project is deployed on Vercel. With GitHub integration, every push to the GitHub repository triggers an automatic deployment, ensuring that the latest changes are reflected in the live application without manual intervention. This streamlined deployment process allows for rapid iterations and updates to the application.
+
 
 
