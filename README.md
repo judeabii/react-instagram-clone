@@ -4,7 +4,7 @@ Instagram Clone: A React-based web app with Chakra UI &amp; Firebase. Explore mo
 ### To utilize the app and its features, users are required to sign up with new credentials, safeguarded by Google's Firebase authentication. 
 ### Please note that there is no integration with Instagram, and users cannot log in using their actual Instagram accounts.
 
-### Application demo
+# Application demo
 https://github.com/judeabii/react-instagram-clone/assets/54803360/cffde733-6dff-44fa-8888-1b556a2044e1
 
 ### Prerequisites
